@@ -6,6 +6,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// jetstream routes
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
